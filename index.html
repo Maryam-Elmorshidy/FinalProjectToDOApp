@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <header class="card__header">
+          <h1 class="card__header--title">TODO</h1>
+          <img src="./images/icon-moon.svg" class="card__header--icon" />
+        </header>
+        <div class="second__part">
+          <div class="card__input">
+            <input
+              type="text"
+              class="card__input--task"
+              placeholder="Create a new todo..."
+              tabindex="0"
+            />
+          </div>
+
+          <div class="card__list">
+            <div class="list"></div>
+            <div class="card__list--lastitem">
+              <h5><span class="num-tasks">&nbsp;</span> item left</h5>
+
+              <span class="card__list--lastitem--middle">
+                <h5 class="All" data-name="All">All &nbsp; &nbsp;</h5>
+                <h5 class="Active" data-name="Active">Active &nbsp; &nbsp;</h5>
+                <h5 class="Complete" data-name="Complete">Complete</h5>
+              </span>
+
+              <h5 class="card__list--lastitem--text">Clear Completed</h5>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="All-Active-Complete">
+              <h5 class="All" data-name="All">All &nbsp; &nbsp;</h5>
+              <h5 class="Active" data-name="Active">Active &nbsp; &nbsp;</h5>
+              <h5 class="Complete" data-name="Complete">Complete</h5>
+            </div>
+
+            <h6 class="card__dragdrop">Drag and drop to reorder list</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" type="module" defer></script>
+  </body>
+</html>
