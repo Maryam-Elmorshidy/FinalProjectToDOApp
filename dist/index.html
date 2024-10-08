@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-BHE7nRvT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CWAeaNld.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <header class="card__header">
+          <h1 class="card__header--title">TODO</h1>
+          <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='26'%3e%3cpath%20fill='%23FFF'%20fill-rule='evenodd'%20d='M13%200c.81%200%201.603.074%202.373.216C10.593%201.199%207%205.43%207%2010.5%207%2016.299%2011.701%2021%2017.5%2021c2.996%200%205.7-1.255%207.613-3.268C23.22%2022.572%2018.51%2026%2013%2026%205.82%2026%200%2020.18%200%2013S5.82%200%2013%200z'/%3e%3c/svg%3e" class="card__header--icon" />
+        </header>
+        <div class="second__part">
+          <div class="card__input">
+            <input
+              type="text"
+              class="card__input--task"
+              placeholder="Create a new todo..."
+              tabindex="0"
+            />
+          </div>
+
+          <div class="card__list">
+            <div class="list"></div>
+            <div class="card__list--lastitem">
+              <h5><span class="num-tasks">&nbsp;</span> item left</h5>
+
+              <span class="card__list--lastitem--middle">
+                <h5 class="All" data-name="All">All &nbsp; &nbsp;</h5>
+                <h5 class="Active" data-name="Active">Active &nbsp; &nbsp;</h5>
+                <h5 class="Complete" data-name="Complete">Complete</h5>
+              </span>
+
+              <h5 class="card__list--lastitem--text">Clear Completed</h5>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="All-Active-Complete">
+              <h5 class="All" data-name="All">All &nbsp; &nbsp;</h5>
+              <h5 class="Active" data-name="Active">Active &nbsp; &nbsp;</h5>
+              <h5 class="Complete" data-name="Complete">Complete</h5>
+            </div>
+
+            <h6 class="card__dragdrop">Drag and drop to reorder list</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
